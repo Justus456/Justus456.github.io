@@ -116,7 +116,7 @@ section {
     padding: 8px;
     border: darkred solid 2px;
     width: 100%;
-    display: none;
+    display: block;
 }
 
 .project-description a {
