@@ -1,0 +1,189 @@
+html {
+    background-color: #ffebd6;
+    color: #331e10;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.875rem;
+    text-wrap: wrap;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bold;
+    margin: 1px;
+}
+
+p {
+    font-family: "Century Gothic", sans-serif;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+.container {
+    margin: 40px 0px;
+}
+
+/* Header */
+
+.desktop {
+    width: 100%;
+    height: 9.375rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #331e10 1px solid;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.375rem;
+    font-style: italic;
+}
+
+.logo {
+    max-height: 6.5rem;
+    max-width: 15.625rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.svg {
+    max-height: 6.25rem;
+    grid-row: span 3;
+    margin: 3px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile .logo {
+        display: block;
+    }
+}
+
+/* Main Content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    max-width: 50rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+.current {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.25rem;
+    border: 2px #331e10 solid;
+}
+
+.current img {
+    max-height: 400px;
+}
+
+@media only screen and (max-width: 480px) {
+    .current {
+        display: block;
+        border: none;
+    }
+
+    .current h4,
+    .current p {
+        color: #ffebd6;
+        background-color: #331e10;
+        margin: 0px;
+    }
+}
+
+/* Images */
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image img {
+    max-height: 18rem;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .image {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
+
+/* Info */
+
+.info {
+    color: #ffebd6;
+    background-color: #331e10;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details {
+    border: #ffebd6 solid 1px;
+    margin: 15px;
+}
+
+.details * {
+    margin: 15px;
+}
+
+/* Footer */
+
+footer {
+    color: #ffebd6;
+    background-color: #331e10;
+    font-style: italic;
+    padding: 15px;
+}
