@@ -1,0 +1,125 @@
+.theme-dark, .theme-dark a {
+    background-color: black;
+    color: white;
+    border-color: white;
+    outline-color: black;
+}
+
+.theme-light, .theme-light a {
+    background-color: white;
+    color: black;
+    border-color: black;
+    outline-color: white;
+}
+
+h1 {
+    font-family: gin, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    max-width: 18.75rem;
+    border-style: solid;
+    border-width: 1px;
+    margin: 1rem;
+    padding: 1px;
+    display: inline-block;
+}
+
+h3 {
+    font-family: mr-keningbeck-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 1rem;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+#switch-light {
+    max-height: 1.75rem;
+    max-width: 1.75rem;
+    background-color: white;
+    border-radius: 50px;
+    padding: 2px;
+    margin: 1.75rem;
+    float: right;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    grid-row: span 5;
+    border-style: solid;
+    border-right-width: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+nav ul {
+    display: block;
+}
+
+nav li {
+    margin: 20px 10%;
+    padding: 5px;
+    max-width: fit-content;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#current-page {
+    border-style: solid;
+    border-width: 1px;
+}
+
+section {
+    margin: 1rem 1.5rem;
+}
+
+.project-box {
+    max-width: 75%;
+    margin: 1.5rem;
+}
+
+.project-title {
+    border-style: solid;
+    border-width: 1px;
+    outline-style: solid;
+    outline-width: 3px;
+    padding: 2px;
+    margin: 1px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.project-title:hover {
+    background-color: lightgray;
+    outline-color: lightgray;
+}
+
+.project-description {
+    color: black;
+    background-color: lightgray;
+    position: relative;
+    top: 3px;
+    padding: 8px;
+    border: darkred solid 2px;
+    width: 100%;
+    display: none;
+}
+
+.project-description a {
+    color: darkred;
+    background-color: lightgray;
+}

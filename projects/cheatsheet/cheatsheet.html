@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webbed Code Cheat Sheet</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Website Quick Guide</h1>
+    <p>A handy quick reference for some common HTML, CSS, and Javascript elements.</p>
+
+    <!-- HTML Section -->
+
+    <section id="html">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h2>HTML</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Tag</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag">&lt;!DOCTYPE html&gt;</td>
+                    <td>First line of all HTML documents to set standard in avoid “quirks mode”</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;html&gt;</td>
+                    <td>Everything must be inside these tags</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;head&gt;</td>
+                    <td>Website metadata; link to styesheets in these tags</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;link href=“styles.css” type=“text/css” rel=“stylesheet”&gt;</td>
+                    <td>Stylesheet link</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</td>
+                    <td> Set the viewport size</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;body&gt;</td>
+                    <td>All other content is contained within these tags</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;header&gt;</td>
+                    <td>Header structural element</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;footer&gt;</td>
+                    <td>Footer structural element</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;h1&gt; to &lt;h6&gt;</td>
+                    <td>Header text; 6 available header tags</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;p&gt;</td>
+                    <td>Paragraph text</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;img src=""&gt;</td>
+                    <td>Image</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;table&gt;</td>
+                    <td>Table element; all other table elements contained within these tags</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;thead&gt;</td>
+                    <td>Table header structural element</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;tr&gt;</td>
+                    <td>Table row</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;th&gt;</td>
+                    <td>Table header cell</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;tbody&gt;</td>
+                    <td>Table body structural element</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;td&gt;</td>
+                    <td>Table data, or cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CSS Section -->
+
+    <section id="css">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <h2>CSS</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="subhead" colspan="2">Selectors</th>
+                </tr>
+                <tr>
+                    <th>Syntax</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="selector">type</td>
+                    <td>Select HTML tag type</td>
+                </tr>
+                <tr>
+                    <td class="selector">.class</td>
+                    <td>Select class; class name is preceded by period</td>
+                </tr>
+                <tr>
+                    <td class="selector">#id</td>
+                    <td>Select id; id name is preceded by hash sign</td>
+                </tr>
+                <tr>
+                    <td class="selector">*</td>
+                    <td>Universal selector</td>
+                </tr>
+                <tr>
+                    <td class="selector">@media only screen and (min-width: 320px) and (max-width: 480px)</td>
+                    <td>Rules for specific screen sizes (e.g. mobile screen, tablet, etc.); adjust sizes as necessary
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th class="subhead" colspan="2">Properties</th>
+                </tr>
+                <tr>
+                    <th>Property</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">background-color</td>
+                    <td>Gives background color to selected element; hex, rgb, hsv, common name</td>
+                </tr>
+                <tr>
+                    <td class="property">background-image</td>
+                    <td>Gives selected element background image; needs src</td>
+                </tr>
+                <tr>
+                    <td class="property">border</td>
+                    <td>Assigns border to selected element; size weight color</td>
+                </tr>
+                <tr>
+                    <td class="property">color</td>
+                    <td>Color of selected element; hex, rgb, hsv, common name</td>
+                </tr>
+                <tr>
+                    <td class="property">display</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="property">width</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="property">height</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="property">font-family</td>
+                    <td>Assign font family to selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">font-style</td>
+                    <td>Change font style of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">font-size</td>
+                    <td>Change font size of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">font-weight</td>
+                    <td>Change font weight of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">margin</td>
+                    <td>Adjust margin of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">padding</td>
+                    <td>Adjust padding of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">opacity</td>
+                    <td>Change opacity of selected element</td>
+                </tr>
+                <tr>
+                    <td class="property">position</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Javascript Section -->
+
+    <section id="javascript">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <h2>Javascript</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="subhead" colspan="2">Operators</th>
+                </tr>
+                <tr>
+                    <th>Operator</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="operator">+</td>
+                    <td>Addition</td>
+                </tr>
+                <tr>
+                    <td class="operator">++</td>
+                    <td>Increment by 1</td>
+                </tr>
+                <tr>
+                    <td class="operator">=</td>
+                    <td>Assignment</td>
+                </tr>
+                <tr>
+                    <td class="operator">===</td>
+                    <td>Strict Equality (Loosely Equal == will attempt to convert different data types)</td>
+                </tr>
+                <tr>
+                    <td class="operator">/</td>
+                    <td>Division</td>
+                </tr>
+                <tr>
+                    <td class="operator">&gt; &lt;</td>
+                    <td>Greater Than and Less Than; inlude = for Greater Than/Less Than or Equal To</td>
+                </tr>
+                <tr>
+                    <td class="operator">*</td>
+                    <td>Multiplication</td>
+                </tr>
+                <tr>
+                    <td class="operator">%</td>
+                    <td>Remainder</td>
+                </tr>
+                <tr>
+                    <td class="operator">-</td>
+                    <td>Subtraction</td>
+                </tr>
+                <tr>
+                    <td class="operator">&&</td>
+                    <td>Logical And</td>
+                </tr>
+                <tr>
+                    <td class="operator">||</td>
+                    <td>Logical Or</td>
+                </tr>
+                <tr>
+                    <td class="operator">!</td>
+                    <td>Logical Not (e.g. != and !== for Inequality and Strict Inequality)</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th class="subhead" colspan="2">Objects</th>
+                </tr>
+                <tr>
+                    <th>Object</th>
+                    <th>Code Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Array = []</td>
+                    <td class="object">const arrayName = [arrayItem0, arrayItem1, ...]<br>arrayName[0]</td>
+                </tr>
+                <tr>
+                    <td>Function() {} Or () => {}</td>
+                    <td class="object">function(var1, var2) {return var1 + var2;}<br>(var1, var2) => return var1 + var2;
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th class="subhead" colspan="2">Statements</th>
+                </tr>
+                <tr>
+                    <th>Statement</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="statement">const</td>
+                    <td>Declare variable; cannot be reassigned, but object properties can be modified</td>
+                </tr>
+                <tr>
+                    <td class="statement">let</td>
+                    <td>Declare variable that can be reassigned</td>
+                </tr>
+                <td class="statement">if () {} else {}</td>
+                <td>If (conditions in parenthesis are true) {code in block will execute} else {code in block will
+                    execute}</td>
+                </tr>
+                <tr>
+                    <td class="statement">return</td>
+                    <td>Ends function execution and specifies a value to be returned to the function</td>
+                </tr>
+            </tbody>
+    </section>
+
+    <!-- Bash Section -->
+
+    <section id="bash">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h2>Bash</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Command</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="command">pwd</td>
+                    <td>Print working directory</td>
+                </tr>
+                <tr>
+                    <td class="command">ls</td>
+                    <td>List directory contents</td>
+                </tr>
+                <tr>
+                    <td class="command">cd</td>
+                    <td>Change directory</td>
+                </tr>
+                <tr>
+                    <td class="command">touch</td>
+                    <td>Creates a file</td>
+                </tr>
+                <tr>
+                    <td class="command">mkdir</td>
+                    <td>Create a directory</td>
+                </tr>
+    </section>
+
+    <!-- Links Section -->
+
+    <section id="links">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h2>Websites</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Link</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></td>
+                    <td>Reference for HTML, CSS, and Javascript</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cssfontstack.com">CSS Fonts</a></td>
+                    <td>A complete collection of web safe CSS font stacks</td>
+                </tr>
+                <tr>
+                    <td><a href="https://unsplash.com">Unsplash</a></td>
+                    <td>Stock images</td>
+                </tr>
+    </section>
+</body>
+
+</html>
