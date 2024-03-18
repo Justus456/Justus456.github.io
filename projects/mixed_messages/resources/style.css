@@ -1,0 +1,99 @@
+body {
+    background: url(./spacebg.jpg);
+    width: 100%;
+    color: #ffffff;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 5px;
+}
+
+header {
+    font-family: Futura;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffff00;
+    width: auto;
+    height: 75px;
+    margin: 0px;
+    padding: 20px;
+    border-bottom: #ffffff 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    font-family: sans-serif;
+    padding: 25px;
+}
+
+nav {
+    max-width: 80px;
+    margin: 0px 15px;
+}
+
+.container {
+    text-align: center;
+    margin: 0px 15px;
+}
+
+main p {
+    margin: 2rem auto;
+    font-size: 1.35rem;
+    max-width: 85%;
+}
+
+#generate {
+    color: #000000;
+    background-color: #ffffff;
+    border: #000000 solid 2px;
+    outline: #ffffff solid 2px;
+    height: 45px;
+    width: 135px;
+    display: block;
+    margin: 10px auto;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+#generate:hover, #generate:focus {
+    background-color: #ffffffad;
+}
+
+#generate:active {
+    color: #ffffff;
+    background-color: #000000;
+    border: #ffffff solid 2px;
+    outline: #000000 solid 2px;
+}
+
+#message {
+    font-family: monospace;
+    font-size: 2rem;
+    color: #009a00;
+    background-color: #000000;
+    border: #ffffff ridge 10px;
+    max-width: 80%;
+    height: 300px;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+footer {
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: left;
+    font-style: italic;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 10px 0px;
+}
