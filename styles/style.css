@@ -1,6 +1,7 @@
 .theme-dark, .theme-dark a {
     background-color: black;
     color: white;
+    fill: white;
     border-color: white;
     outline-color: black;
 }
@@ -8,6 +9,7 @@
 .theme-light, .theme-light a {
     background-color: white;
     color: black;
+    fill: black;
     border-color: black;
     outline-color: white;
 }
@@ -38,14 +40,14 @@ p {
     font-family: Helvetica, sans-serif;
 }
 
-#switch-light {
-    max-height: 1.75rem;
-    max-width: 1.75rem;
-    background-color: white;
+#lightswitch {
+    max-height: 2rem;
+    max-width: 2rem;
     border-radius: 50px;
-    padding: 2px;
+    padding: 4px;
     margin: 1.75rem;
     float: right;
+    cursor: pointer;
 }
 
 main {
@@ -90,6 +92,7 @@ section {
 .project-box {
     max-width: 75%;
     margin: 1.5rem;
+    box-sizing: border-box;
 }
 
 .project-title {
@@ -100,26 +103,38 @@ section {
     padding: 2px;
     margin: 1px;
     cursor: pointer;
-    width: 100%;
+    box-sizing: inherit;
 }
 
 .project-title:hover {
     background-color: lightgray;
     outline-color: lightgray;
+    color: black;
 }
 
 .project-description {
     color: black;
-    background-color: lightgray;
+    background-color: darkgray;
     position: relative;
     top: 3px;
     padding: 8px;
     border: darkred solid 2px;
-    width: 100%;
-    display: block;
+    display: none;
+    box-sizing: inherit;
+}
+
+.project-description p {
+    margin: 0.45rem;
 }
 
 .project-description a {
     color: darkred;
-    background-color: lightgray;
+    background-color: darkgray;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+.project-description a:hover {
+    text-decoration: underline;
 }
