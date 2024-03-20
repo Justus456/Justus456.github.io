@@ -1,4 +1,5 @@
-.theme-dark, .theme-dark a {
+.theme-dark,
+.theme-dark a {
     background-color: black;
     color: white;
     fill: white;
@@ -6,7 +7,8 @@
     outline-color: black;
 }
 
-.theme-light, .theme-light a {
+.theme-light,
+.theme-light a {
     background-color: white;
     color: black;
     fill: black;
@@ -41,24 +43,24 @@ p {
 }
 
 #lightswitch {
-    max-height: 2rem;
-    max-width: 2rem;
-    border-radius: 50px;
-    padding: 4px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 75px;
+    padding: 5px;
     margin: 1.75rem;
     float: right;
     cursor: pointer;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(5, 1fr);
     font-family: Helvetica, sans-serif;
+    display: flex;
+    gap: 1rem;
 }
 
 nav {
-    grid-row: span 5;
+    height: max-content;
+    width: 25%;
     border-style: solid;
     border-right-width: 1px;
     font-weight: bold;
@@ -83,10 +85,12 @@ nav a {
 #current-page {
     border-style: solid;
     border-width: 1px;
+    cursor: default;
 }
 
 section {
     margin: 1rem 1.5rem;
+    max-width: 100%;
 }
 
 .project-box {
@@ -119,7 +123,6 @@ section {
     top: 3px;
     padding: 8px;
     border: darkred solid 2px;
-    display: none;
     box-sizing: inherit;
 }
 
@@ -137,4 +140,24 @@ section {
 
 .project-description a:hover {
     text-decoration: underline;
+}
+
+#project-1-desc {
+    display: none;
+}
+
+#project-2-desc {
+    display: none;
+}
+
+#project-3-desc {
+    display: none;
+}
+
+#project-4-desc {
+    display: none;
+}
+
+img {
+    max-height: 20rem;
 }
