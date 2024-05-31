@@ -47,38 +47,42 @@
 </head>
 
 <body>
-    <div>
-        Do you own or rent the property?
-        <input type="radio" id="ownership-own" name="ownership" value="own" checked required>
-        <label for="ownership-own">Own</label>
-        <input type="radio" id="ownership-rent" name="ownership" value="rent" required>
-        <label for="ownership-rent">Rent</label>
-    </div>
-    <div id="multi-box">
-        Does the property contain multiple tenants?
-        <input type="radio" id="multi-yes" name="multi" value="yes" required>
-        <label for="multi-yes">Yes</label>
-        <input type="radio" id="multi-no" name="multi" value="no" required checked>
-        <label for="multi-no">No</label>
-    </div>
-    <div>
-        Is the property used primarily for Commercial, Industrial or Non-Profit business?
-        <input type="radio" id="type-commercial" name="type" value="commercial" checked required>
-        <label for="type-commercial">Commercial</label>
-        <input type="radio" id="type-industrial" name="type" value="industrial" required>
-        <label for="type-industrial">Industrial</label>
-        <input type="radio" id="type-nonprofit" name="type" value="nonprofit" required>
-        <label for="type-nonprofit">Non-Profit</label>
-    </div>
-    <div>
-        <label>Total estimated cost of improvements:</label>
-        $<input type="number" id="costs" name="costs" min=0 required>
-    </div>
-    <input type="submit" id="submit" name="submit" value="Calculate">
-    <div>
-        Your estimated reimbursement is: <span id="grant"></span>
-        <br>
-        The maximum grant amount your project may receive: <span id="maximum"></span>
+    <p>Estimate your SBIF reimbursement with this calculator. <strong>NOTE:</strong> This is only an estimation. Several
+        factors can affect eligibility and reimbursement amount.</p>
+    <div id="calculator">
+        <div>
+            Do you own or rent the property?
+            <input type="radio" id="ownership-own" name="ownership" value="own" checked required>
+            <label for="ownership-own">Own</label>
+            <input type="radio" id="ownership-rent" name="ownership" value="rent" required>
+            <label for="ownership-rent">Rent</label>
+        </div>
+        <div id="multi-box">
+            Does the property contain multiple tenants?
+            <input type="radio" id="multi-yes" name="multi" value="yes" required>
+            <label for="multi-yes">Yes</label>
+            <input type="radio" id="multi-no" name="multi" value="no" required checked>
+            <label for="multi-no">No</label>
+        </div>
+        <div>
+            Is the property used primarily for Commercial, Industrial or Non-Profit business?
+            <input type="radio" id="type-commercial" name="type" value="commercial" checked required>
+            <label for="type-commercial">Commercial</label>
+            <input type="radio" id="type-industrial" name="type" value="industrial" required>
+            <label for="type-industrial">Industrial</label>
+            <input type="radio" id="type-nonprofit" name="type" value="nonprofit" required>
+            <label for="type-nonprofit">Non-Profit</label>
+        </div>
+        <div>
+            <label>Total estimated cost of improvements:</label>
+            $<input type="number" id="costs" name="costs" min="0" required>
+        </div>
+        <input type="submit" id="submit" name="submit" value="Calculate">
+        <div>
+            Your estimated reimbursement is: <input readonly id="grant">
+            <br>
+            The maximum grant amount your project may receive: <input readonly id="maximum">
+        </div>
     </div>
 
     <script>
@@ -109,35 +113,35 @@
             if (commercialRadio.checked === true || nonprofitRadio.checked === true) {
                 estimatedGrant = estimatedCosts * 0.9;
                 if (ownRadio.checked === true || (rentRadio.checked === true && multiNo.checked === true)) {
-                    maxDisplay.innerHTML = "$150,000";
+                    maxDisplay.value = "$150,000";
                     if (estimatedGrant > 150000) {
-                        grantDisplay.innerHTML = "150,000";
+                        grantDisplay.value = "$150,000";
                     } else {
-                        grantDisplay.innerHTML = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
                     }
                 } else if (rentRadio.checked === true && multiYes.checked === true) {
-                    maxDisplay.innerHTML = "$75,000";
+                    maxDisplay.value = "$75,000";
                     if (estimatedGrant > 75000) {
-                        grantDisplay.innerHTML = "$75,000";
+                        grantDisplay.value = "$75,000";
                     } else {
-                        grantDisplay.innerHTML = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
                     }
                 }
             } else if (industrialRadio.checked === true) {
                 estimatedGrant = estimatedCosts * 0.5;
                 if (ownRadio.checked === true || (rentRadio.checked === true && multiNo.checked === true)) {
-                    maxDisplay.innerHTML = "$250,000";
+                    maxDisplay.value = "$250,000";
                     if (estimatedGrant > 250000) {
-                        grantDisplay.innerHTML = "$250,000";
+                        grantDisplay.value = "$250,000";
                     } else {
-                        grantDisplay.innerHTML = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
                     }
                 } else if (rentRadio.checked === true && multiYes.checked === true) {
-                    maxDisplay.innerHTML = "$100,000";
+                    maxDisplay.value = "$100,000";
                     if (estimatedGrant > 100000) {
-                        grantDisplay.innerHTML = "$100,000";
+                        grantDisplay.value = "$100,000";
                     } else {
-                        grantDisplay.innerHTML = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
                     }
                 }
             }
