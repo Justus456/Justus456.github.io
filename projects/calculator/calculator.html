@@ -117,14 +117,14 @@
                     if (estimatedGrant > 150000) {
                         grantDisplay.value = "$150,000";
                     } else {
-                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = Intl.NumberFormat("en", { style: "currency", currency: "USD" }).format(estimatedGrant);
                     }
                 } else if (rentRadio.checked === true && multiYes.checked === true) {
                     maxDisplay.value = "$75,000";
                     if (estimatedGrant > 75000) {
                         grantDisplay.value = "$75,000";
                     } else {
-                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = Intl.NumberFormat("en", { style: "currency", currency: "USD" }).format(estimatedGrant);
                     }
                 }
             } else if (industrialRadio.checked === true) {
@@ -134,14 +134,14 @@
                     if (estimatedGrant > 250000) {
                         grantDisplay.value = "$250,000";
                     } else {
-                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = Intl.NumberFormat("en", { style: "currency", currency: "USD" }).format(estimatedGrant);
                     }
                 } else if (rentRadio.checked === true && multiYes.checked === true) {
                     maxDisplay.value = "$100,000";
                     if (estimatedGrant > 100000) {
                         grantDisplay.value = "$100,000";
                     } else {
-                        grantDisplay.value = "$" + Intl.NumberFormat({ style: "currency" }).format(estimatedGrant);
+                        grantDisplay.value = Intl.NumberFormat("en", { style: "currency", currency: "USD" }).format(estimatedGrant);
                     }
                 }
             }
